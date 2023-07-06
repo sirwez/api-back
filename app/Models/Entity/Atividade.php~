@@ -1,0 +1,49 @@
+<?php
+
+namespace App\Models\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Atividade
+ *
+ * @ORM\Table(name="atividade", indexes={@ORM\Index(name="idxprojeto", columns={"idProjeto"})})
+ * @ORM\Entity
+ */
+class Atividade
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="bigint", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var \DateTime|null
+     *
+     * @ORM\Column(name="dataCadastro", type="datetime", nullable=true, options={"default"="CURRENT_TIMESTAMP"})
+     */
+    private $datacadastro = 'CURRENT_TIMESTAMP';
+
+    /**
+     * @var string|null
+     *
+     * @ORM\Column(name="descricao", type="string", length=255, nullable=true)
+     */
+    private $descricao;
+
+    /**
+     * @var \App\Models\Entity\Projeto
+     *
+     * @ORM\ManyToOne(targetEntity="App\Models\Entity\Projeto")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="idProjeto", referencedColumnName="id")
+     * })
+     */
+    private $idprojeto;
+
+
+}

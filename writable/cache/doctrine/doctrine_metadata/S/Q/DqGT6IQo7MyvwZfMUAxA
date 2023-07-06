@@ -1,0 +1,79 @@
+<?php //App__Models__Entity__Projeto__CLASSMETADATA__
+
+namespace Symfony\Component\VarExporter\Internal;
+
+return $getExpiry ? 1688672098 : Hydrator::hydrate(
+    $o = [
+        clone (($p = &Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\BigIntegerIdentityGenerator'] ?? Registry::p('Doctrine\\ORM\\Id\\BigIntegerIdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Models\\Entity\\Projeto',
+            ],
+            'namespace' => [
+                'App\\Models\\Entity',
+            ],
+            'rootEntityName' => [
+                'App\\Models\\Entity\\Projeto',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'id' => [
+                        'fieldName' => 'id',
+                        'type' => 'bigint',
+                        'scale' => null,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'columnName' => 'id',
+                        'id' => true,
+                    ],
+                    'descricao' => [
+                        'fieldName' => 'descricao',
+                        'type' => 'string',
+                        'scale' => null,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => null,
+                        'columnName' => 'descricao',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'id' => 'id',
+                    'descricao' => 'descricao',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'id' => 'id',
+                    'descricao' => 'descricao',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'projeto',
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+);

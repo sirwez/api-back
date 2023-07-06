@@ -1,0 +1,22 @@
+CRITICAL - 2023-07-06 00:42:00 --> Cannot call constructor
+in APPPATH\Controllers\Atividades.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Atividades->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\SirWe\\Downloads\\codeigniter4-framework-e392123\\public\\index.php')
+CRITICAL - 2023-07-06 00:42:00 --> Cannot call constructor
+in APPPATH\Controllers\Atividades.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Atividades->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\SirWe\\Downloads\\codeigniter4-framework-e392123\\public\\index.php')
+CRITICAL - 2023-07-06 01:46:41 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Atividades.php on line 72.
+ 1 APPPATH\Controllers\Atividades.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\SirWe\\Downloads\\codeigniter4-framework-e392123\\app\\Controllers\\Atividades.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Atividades->cadastrar()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\SirWe\\Downloads\\codeigniter4-framework-e392123\\public\\index.php')

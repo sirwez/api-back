@@ -1,0 +1,141 @@
+<?php //App__Models__Entity__Atividade__CLASSMETADATA__
+
+namespace Symfony\Component\VarExporter\Internal;
+
+return $getExpiry ? 1688672098 : Hydrator::hydrate(
+    $o = [
+        clone (($p = &Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\BigIntegerIdentityGenerator'] ?? Registry::p('Doctrine\\ORM\\Id\\BigIntegerIdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Models\\Entity\\Atividade',
+            ],
+            'namespace' => [
+                'App\\Models\\Entity',
+            ],
+            'rootEntityName' => [
+                'App\\Models\\Entity\\Atividade',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'id' => [
+                        'fieldName' => 'id',
+                        'type' => 'bigint',
+                        'scale' => null,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'columnName' => 'id',
+                        'id' => true,
+                    ],
+                    'datacadastro' => [
+                        'fieldName' => 'datacadastro',
+                        'type' => 'datetime',
+                        'scale' => null,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => null,
+                        'options' => [
+                            'default' => 'CURRENT_TIMESTAMP',
+                        ],
+                        'columnName' => 'dataCadastro',
+                    ],
+                    'descricao' => [
+                        'fieldName' => 'descricao',
+                        'type' => 'string',
+                        'scale' => null,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => null,
+                        'columnName' => 'descricao',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'id' => 'id',
+                    'dataCadastro' => 'datacadastro',
+                    'descricao' => 'descricao',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'id' => 'id',
+                    'datacadastro' => 'dataCadastro',
+                    'descricao' => 'descricao',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'atividade',
+                    'indexes' => [
+                        'idxprojeto' => [
+                            'columns' => [
+                                'idProjeto',
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'idprojeto' => [
+                        'fieldName' => 'idprojeto',
+                        'joinColumns' => [
+                            [
+                                'name' => 'idProjeto',
+                                'unique' => false,
+                                'nullable' => true,
+                                'onDelete' => null,
+                                'columnDefinition' => null,
+                                'referencedColumnName' => 'id',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => null,
+                        'targetEntity' => 'App\\Models\\Entity\\Projeto',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Models\\Entity\\Atividade',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'idProjeto' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'idProjeto' => 'idProjeto',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'idProjeto',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+);
